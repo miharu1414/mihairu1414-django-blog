@@ -127,8 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-# herokuのための追記
-
+# herokuデプロイ
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
 
