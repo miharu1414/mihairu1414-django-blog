@@ -118,7 +118,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(default='サンプルのタイトル', max_length=255, verbose_name='タイトル')),
-                ('header_text', models.TextField(default='このブログはDjangoとBootstrap4で作成されました\n[filter url]https://github.com/naritotzawa/django-torina-blog<split>Githubのソースコード[end]', max_length=255, verbose_name='ヘッダーのテキスト')),
+                ('header_text', models.TextField(default='このブログはDjangoで作成されました\n[filter url] [end]', max_length=255, verbose_name='ヘッダーのテキスト')),
                 ('description', models.TextField(default='サンプルの説明', max_length=255, verbose_name='サイトの説明')),
                 ('author', models.CharField(default='サンプルの管理者', max_length=255, verbose_name='管理者')),
                 ('author_mail', models.EmailField(default='your_mail@gmail.com', max_length=255, verbose_name='管理者アドレス')),
