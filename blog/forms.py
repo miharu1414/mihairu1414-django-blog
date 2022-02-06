@@ -10,7 +10,7 @@ class PostSerachForm(forms.Form):
     keyword = forms.CharField(
         label='キーワード', required=False,
         widget=forms.TextInput(
-            attrs={'class': 'form-control mr-sm-2', 'placeholder': 'クイックサーチ'}),
+            attrs={'class': 'form-control mr-sm-2', 'placeholder': 'キーワード検索'}),
     )
 
 
